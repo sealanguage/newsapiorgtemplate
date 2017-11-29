@@ -4,7 +4,7 @@ $(document).ready(function(){
     $.ajax({
         method: "GET",
         url: "https://newsapi.org/v2/sources",
-        data: { category: "business", country: "us", language: "en", apiKey: "c70b91b84386467ea4eaadbea1fcc78c" },
+        data: { category: "business", country: "us", language: "en", apiKey: "3820fecb5ce54f10a2473ac3bee90c76" },
         //TAKE OUT API KEY BEFORE POSTING TO GITHUB
         success: function(data) {
             if (data.status === "ok") {
