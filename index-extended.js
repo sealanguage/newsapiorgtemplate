@@ -34,7 +34,10 @@ $(document).ready(function(){
                     console.log(data);
                     for (var i = 0; i < data.articles.length; i++) {
                     var headlines = document.createElement("P");
-                    headlines.innerHTML = data.articles[i].title;
+                    //headlines.innerHTML = data.articles[i].title + "<br>" +  data.articles[i].description;
+                    headlines.innerHTML = data.articles[i].title + "<br> <span id='font-weight: lighter'>" +  data.articles[i].description; + "</span>";
+                    //headlines.innerHTML = data.articles[i].title;
+                    //headlines.innerHTML = data.articles[i].description;
                     //     //headlines.innerHTML = data.articles[i].name;
                      document.getElementById("display-top-articles").appendChild(headlines);
                      }
